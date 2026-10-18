@@ -1,0 +1,25 @@
+modLoader = "javafml"
+loaderVersion = "[1,)"
+license = "MIT"
+
+[[mods]]
+modId = "slimmer"
+version = "1.0.0"
+displayName = "Slimmer"
+description = '''
+Слиммер - зелёный крипер-диверсант. Подкрадывается к игроку со спины, запрыгивает на спину и взрывается.
+'''
+
+[[dependencies.slimmer]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.slimmer]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1]"
+ordering = "NONE"
+side = "BOTH"
