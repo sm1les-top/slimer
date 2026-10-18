@@ -229,10 +229,9 @@ public class Slimmer extends Monster {
     }
 
     @Override
-    protected void serverAiStep() {
+    protected boolean isImmobile() {
         // на спине и в прыжке ИИ отключён - всем управляет tick()
-        if (isOnBack()) return;
-        super.serverAiStep();
+        return isOnBack() || super.isImmobile();
     }
 
     @Override
